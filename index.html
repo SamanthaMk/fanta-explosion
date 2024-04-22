@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanta Explosion Of Flavours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="coca-white.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+        <div class="textBox">
+        <h2>Fanta Always <br><span>Bursting With Flavours</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dicta iste error
+          cumque nostrum ea, voluptates asperiores ipsa corrupti temporibus corporis praesentium
+          neque non est consectetur minima harum sed necessitatibus?
+        </p>
+        <a href="#">View All Products</a>   
+    </div>
+    <div class="imgBox">
+    <img src="new-orange.png" alt="fanta orange" class='fanta'>
+    </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="new-orange.png"  onclick="imgSlider('new-orange.png');changeBgColor('rgb(255, 69, 2)') " alt="fanta orange"></li>
+            <li><img src="real-blue.png" onclick="imgSlider('real-blue.png'); changeBgColor('rgb(3, 120, 230)')"   alt="fanta orange"></li>
+            <li><img src="red-2.png" onclick="imgSlider('red-2.png'); changeBgColor('#e60c2c')"  alt="fanta orange"></li>
+        </ul>
+        <ul class="sci">
+        <li><a href="#"><img src="facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="instagram.png" alt=""></a></li>
+    </ul>
+    </section>
+    <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.fanta') .src = anything;
+    }
+    function changeBgColor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+    }
+    </script>
+</body>
+</html>
